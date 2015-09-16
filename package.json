@@ -1,0 +1,36 @@
+{
+  "name": "gherkin-parser",
+  "version": "1.0.0",
+  "description": "Parse gherkin feature files",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "deps:pkg": "ncu",
+    "deps:update": "ncu -a",
+    "test": "standard && npm run deps && NODE_ENV=test node test/index.js",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test/index.js"
+  },
+  "repository": "yoshuawuyts/gherkin-parser",
+  "keywords": [
+    "gherkin",
+    "feature",
+    "parse",
+    "stream"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "gherk": "^0.2.1",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "concat-stream": "^1.5.0",
+    "dependency-check": "^2.5.1",
+    "istanbul": "^0.3.19",
+    "npm-check-updates": "^2.2.0",
+    "tape": "^4.2.0"
+  },
+  "files": [
+    "index.js",
+    "bin/*"
+  ]
+}
