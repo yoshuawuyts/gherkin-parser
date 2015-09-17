@@ -60,9 +60,9 @@ Feature: Can drink beer when thirsty
 ```
 
 ## API
-### gherkin()
-Create a gherkin transform stream. Input must be a feature file, output is an
-AST.
+### transformStream = gherkin()
+Create a gherkin transform stream. Transforms gherkin `.feature` files into an
+AST object.
 
 ## See Also
 - [gherk.js](https://github.com/bakerface/gherk/blob/master/lib/gherk.js)
